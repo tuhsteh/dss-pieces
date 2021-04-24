@@ -17,6 +17,7 @@
                 "-IC:/libs/SDL2_net/x86_64-w64-mingw32/include",
                 "-LC:/libs/SDL2_net/x86_64-w64-mingw32/lib",
                 "-lmingw32",
+                "-lws2_32",
                 "-lSDL2main",
                 "-lSDL2",
                 "-lSDL2_image",
