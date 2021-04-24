@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "SDL2",
+            "command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "src\\*.cpp",
+                "-o",
+                "build\\game.exe",
+                "-IC:/libs/SDL2/x86_64-w64-mingw32/include",
+                "-LC:/libs/SDL2/x86_64-w64-mingw32/lib",
+                "-IC:/libs/SDL2_image/x86_64-w64-mingw32/include",
+                "-LC:/libs/SDL2_image/x86_64-w64-mingw32/lib",
+                "-IC:/libs/SDL2_net/x86_64-w64-mingw32/include",
+                "-LC:/libs/SDL2_net/x86_64-w64-mingw32/lib",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2",
+                "-lSDL2_image",
+                "-lSDL2_net",
+                "-mwindows"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+            "detail": "compiler: \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe\""
+        }
+    ]
+}
