@@ -12,10 +12,9 @@
 char *build_command_query(char *, char *);
 
 int main(int argc, char *argv[]) {
-
   using namespace std;
-  freopen("output.txt","w",stdout);
-  freopen("error.txt","w",stderr);
+  freopen("output.txt", "w", stdout);
+  freopen("error.txt", "w", stderr);
 
   int client_socket;
   char *host;
